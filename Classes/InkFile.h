@@ -1,9 +1,8 @@
 //
 //  InkFile.h
-//  DropboxBrowser
 //
 //  Created by Darko Vukovic on 7/11/13.
-//  Copyright (c) 2013 iRare Media. All rights reserved.
+//  Copyright (c) 2013 Ink. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

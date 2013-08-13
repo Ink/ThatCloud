@@ -1,9 +1,8 @@
 //
 //  main.m
-//  DropboxBrowser
 //
-//  Created by iRare Media on 12/26/12.
-//  Copyright (c) 2013 iRare Media. All rights reserved.
+//  Created by Ink on 8/1/13.
+//  Copyright (c) 2013 Ink. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

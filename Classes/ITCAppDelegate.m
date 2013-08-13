@@ -1,9 +1,8 @@
 //
-//  DBBAppDelegate.m
-//  DropboxBrowser
+//  ITCAppDelegate.m
 //
-//  Created by iRare Media on 12/26/12.
-//  Copyright (c) 2013 iRare Media. All rights reserved.
+//  Created by Ink on 8/1/13.
+//  Copyright (c) 2013 Ink. All rights reserved.
 //
 
 #import "ITCAppDelegate.h"
@@ -25,7 +24,7 @@
     [Ink setupWithAppKey:@"AneRowxpcloudAGkdngz"];
     [[INKCoreManager sharedManager] registerAdditionalURLScheme:@"thatcloud"];
     
-    INKAction *store = [INKAction action:@"Store in That Cloud" type:INKActionType_Store];
+    INKAction *store = [INKAction action:@"Store in ThatCloud" type:INKActionType_Store];
     [Ink registerAction:store withTarget:self selector:@selector(storeBlob:action:error:)];
     
     INKAction *storeFacebook = [INKAction action:@"Post in Facebook" type:INKActionType_Share];

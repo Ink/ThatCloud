@@ -3,7 +3,7 @@
 //  FPPicker
 //
 //  Created by Liyan David Chang on 1/7/13.
-//  Copyright (c) 2013 Filepicker.io (Couldtop Inc.). All rights reserved.
+//  Copyright (c) 2013 Ink (Cloudtop Inc.). All rights reserved.
 //
 
 #import "FPInfoViewController.h"
@@ -75,7 +75,7 @@
     [legalLabel setTextColor:[UIColor grayColor]];
     [legalLabel setFont:[UIFont systemFontOfSize:12]];
     [legalLabel setTextAlignment:NSTextAlignmentCenter];
-    legalLabel.text = @"Filepicker.io 2012, 2013";
+    legalLabel.text = @"Ink 2012, 2013";
 
     [self.view addSubview:legalLabel];
 

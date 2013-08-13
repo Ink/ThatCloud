@@ -3,7 +3,7 @@
 //  FPPicker
 //
 //  Created by Liyan David Chang on 6/20/12.
-//  Copyright (c) 2012 Filepicker.io (Cloudtop Inc), All rights reserved.
+//  Copyright (c) 2012 Ink (Cloudtop Inc), All rights reserved.
 //
 
 #import "FPInternalHeaders.h"
@@ -89,7 +89,7 @@
     if (fpAPIKEY == NULL || [fpAPIKEY isEqualToString:@""] || [fpAPIKEY isEqualToString:@"SET_FILEPICKER.IO_APIKEY_HERE"]){
         NSException* apikeyException = [NSException
                                     exceptionWithName:@"Filepicker Configuration Error"
-                                    reason:@"APIKEY not set. You can get one at https://www.filepicker.io and insert it into your project's info.plist as 'Filepicker API Key'"
+                                    reason:@"APIKEY not set. You can get one at https://www.Ink and insert it into your project's info.plist as 'Filepicker API Key'"
                                     userInfo:nil];
         [apikeyException raise];
     }

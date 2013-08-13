@@ -3,7 +3,7 @@
 //  FPPicker
 //
 //  Created by Liyan David Chang on 6/20/12.
-//  Copyright (c) 2012 Filepicker.io (Cloudtop Inc), All rights reserved.
+//  Copyright (c) 2012 Ink (Cloudtop Inc), All rights reserved.
 //
 
 #import "FPSourceListController.h"
@@ -511,7 +511,7 @@
     [titleLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:12]];
     [titleLabel setBackgroundColor:[UIColor clearColor]];
     [titleLabel setTextColor:[UIColor whiteColor]];
-    [titleLabel setText:@"Powered by Filepicker.io"];
+    [titleLabel setText:@"Powered by Ink"];
     [titleLabel setTextAlignment:NSTextAlignmentCenter];
     
     UIBarButtonItem *title = [[UIBarButtonItem alloc] initWithCustomView:titleLabel];
