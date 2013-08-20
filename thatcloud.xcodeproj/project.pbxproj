@@ -299,7 +299,7 @@
 		027AB20E17B9D8D5007171B1 /* WelcomeThatPDF@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WelcomeThatPDF@2x.png"; sourceTree = "<group>"; };
 		027AB20F17B9D8D5007171B1 /* WelcomeThatPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeThatPhoto.png; sourceTree = "<group>"; };
 		027AB21017B9D8D5007171B1 /* WelcomeThatPhoto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WelcomeThatPhoto@2x.png"; sourceTree = "<group>"; };
-		027AB22717B9DB1E007171B1 /* ATConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = ATConnect.h; path = "Vendor/apptentive-ios/ApptentiveConnect/source/ATConnect.h"; sourceTree = "<group>"; };
+		027AB22717B9DB1E007171B1 /* ATConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ATConnect.h; path = "Vendor/apptentive-ios/ApptentiveConnect/source/ATConnect.h"; sourceTree = "<group>"; };
 		027AB22D17B9DD26007171B1 /* ApptentiveResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ApptentiveResources.bundle; path = Vendor/ApptentiveResources.bundle; sourceTree = "<group>"; };
 		02802A071797A65A009AF9DE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		0296A32D179CBD4300EB08CB /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
@@ -1503,8 +1503,8 @@
 		99DDE388168B7B780071241C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Cloudtop, Inc. (2JM4L43UFF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Cloudtop, Inc. (2JM4L43UFF)";
 				COMPRESS_PNG_FILES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1516,8 +1516,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = thatcloud;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "28CCD7EB-80EC-4C9C-AC63-7B3409AFCB53";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "28CCD7EB-80EC-4C9C-AC63-7B3409AFCB53";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
