@@ -21,7 +21,7 @@
 
 @interface FilePreviewViewController : UIViewController <UISplitViewControllerDelegate, UIWebViewDelegate, FPSaveDelegate>
 
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (nonatomic) IBOutlet UIWebView *webView;
 @property InkFile *myFile;
 @property id <Resetable> master;
 
@@ -29,6 +29,6 @@
 - (void) showSpinner;
 - (void) updateSpinner:(float)progress;
 - (void) reset;
-- (void)showNoPreviewScreen;
+- (void) showNoPreviewScreen;
 
 @end

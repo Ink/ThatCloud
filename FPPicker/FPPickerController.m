@@ -8,7 +8,7 @@
 
 #import "FPInternalHeaders.h"
 #import "FPPickerController.h"
-#import "FPSourceListController.h"
+#import "FileSourceListController.h"
 
 
 @interface FPPickerController ()
@@ -94,7 +94,7 @@
         [apikeyException raise];
     }
     
-    FPSourceListController *fpSourceListController = [FPSourceListController alloc];
+    FileSourceListController *fpSourceListController = [FileSourceListController alloc];
     fpSourceListController.fpdelegate = self;
     fpSourceListController.imgdelagate = self;
     fpSourceListController.sourceNames = sourceNames;
@@ -148,7 +148,7 @@
         
     [FPMBProgressHUD showHUDAddedTo:picker.view animated:YES];
     
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC);
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^(void){
     
     // Picked Something From the Local Camera
@@ -251,12 +251,12 @@
 
 #pragma mark FPSourcePickerDelegate Methods
 
-- (void)FPSourceController:(FPSourceController *)picker didPickMediaWithInfo:(NSDictionary *)info  {
+- (void)FPSourceController:(FileSourceController *)picker didPickMediaWithInfo:(NSDictionary *)info  {
     [fpdelegate FPPickerController:self didPickMediaWithInfo:info];
 }
 
 
-- (void)FPSourceController:(FPSourceController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
+- (void)FPSourceController:(FileSourceController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
 
     //The user chose a file from the cloud or camera roll.
     NSLog(@"Picked something from a source: %@", info);
@@ -266,7 +266,7 @@
 
 }
 
-- (void)FPSourceControllerDidCancel:(FPSourceController *)picker
+- (void)FPSourceControllerDidCancel:(FileSourceController *)picker
 {
     //The user chose to cancel when using the cloud or camera roll.
     NSLog(@"FP Canceled.");

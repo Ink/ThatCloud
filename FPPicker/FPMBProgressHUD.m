@@ -638,7 +638,7 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 	}
 	
 	UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
-	float radians = 0;
+	double radians = 0;
 	if (UIInterfaceOrientationIsLandscape(orientation)) {
 		if (orientation == UIInterfaceOrientationLandscapeLeft) { radians = -M_PI_2; } 
 		else { radians = M_PI_2; }
@@ -648,7 +648,7 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 		if (orientation == UIInterfaceOrientationPortraitUpsideDown) { radians = M_PI; } 
 		else { radians = 0; }
 	}
-	rotationTransform = CGAffineTransformMakeRotation(radians);
+	rotationTransform = CGAffineTransformMakeRotation((float)radians);
 	
 	if (animated) {
 		[UIView beginAnimations:nil context:nil];
@@ -723,7 +723,7 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 		CGFloat startAngle = - ((float)M_PI / 2); // 90 degrees
 		CGFloat endAngle = (2 * (float)M_PI) + startAngle;
 		[processBackgroundPath addArcWithCenter:center radius:radius startAngle:startAngle endAngle:endAngle clockwise:YES];
-		[[UIColor colorWithRed:1 green:1 blue:1 alpha:0.1] set];
+		[[UIColor colorWithRed:1 green:1 blue:1 alpha:0.1f] set];
 		[processBackgroundPath stroke];
 		// Draw progress
 		UIBezierPath *processPath = [UIBezierPath bezierPath];

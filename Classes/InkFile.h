@@ -18,16 +18,13 @@ typedef enum {
 
 @property (strong, atomic) NSString *fileName;
 @property (strong, atomic) NSString *filePath;
+
+// For saving back
 @property (strong, atomic) NSString *inkPath;
-@property (strong, atomic) NSURL *fileURL;
-@property (strong, atomic) NSString *destinationDirectory;
-@property (strong, atomic) NSString *mode;
 @property (strong, atomic) NSString *uti;
 @property (strong, atomic) NSString *mimetype;
-@property (strong, atomic) NSURL *inkurl;
 @property (strong, atomic) NSData *data;
 @property (strong, atomic) NSString *fphandle;
-//@property (strong, atomic) DBMetadata *dbMetadata;
 @property (atomic) StorageLocation storageLocation;
 
 - (void)writeData:(NSData *)inputData;

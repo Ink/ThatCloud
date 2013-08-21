@@ -117,8 +117,6 @@
     self.pageControlIsChangingPage = YES;
 }
 
-#pragma scrollviewdelegate
-
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     if (self.pageControlIsChangingPage) {
@@ -126,7 +124,7 @@
     }
     CGFloat pageWidth = scrollView.frame.size.width;
     //switch page at 50% across
-    int page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    int page = (int)floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
     self.pageControl.currentPage = page;
 }
 

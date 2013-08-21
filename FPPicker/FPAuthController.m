@@ -151,7 +151,7 @@
 {
     [FPMBProgressHUD hideAllHUDsForView:webview animated:YES]; 
     
-    int width = CGRectApplyAffineTransform([self.view bounds], [self.view transform]).size.width;        
+    int width = (int)CGRectApplyAffineTransform([self.view bounds], [self.view transform]).size.width;
     
     NSString* js = 
     [NSString stringWithFormat:

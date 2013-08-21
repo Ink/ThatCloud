@@ -8,6 +8,7 @@
 
 #import "PairingViewController.h"
 #import "FlatUIKit.h"
+#import "ThatCloudConstants.h"
 
 @interface PairingViewController ()
 @property NSString *fphandle;
@@ -52,14 +53,14 @@
     subheader.text = @"You can easily share files with other ThatCloud users.\n A secure pairing code has been generated below \nand can be retrieved on another device with ThatCloud.";
     subheader.lineBreakMode = NSLineBreakByWordWrapping;
     subheader.numberOfLines = 0;
-    subheader.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18];
+    subheader.font = [UIFont fontWithName:LIGHTFONT size:18];
     [self.view addSubview:subheader];
 
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 350, 540, 30)];
     label.textAlignment = NSTextAlignmentCenter;
     label.text = @"Pairing Code";
-    label.font = [UIFont fontWithName:@"HelveticaNeue" size:22];
+    label.font = [UIFont fontWithName:FONT size:22];
     [self.view addSubview:label];
 
     
@@ -74,7 +75,7 @@
     UILabel *copylabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 410, 540, 30)];
     copylabel.textAlignment = NSTextAlignmentCenter;
     copylabel.text = @"(Copied to your clipboard)";
-    copylabel.font = [UIFont fontWithName:@"HelveticaNeue" size:14];
+    copylabel.font = [UIFont fontWithName:FONT size:14];
     copylabel.textColor = [UIColor grayColor];
     [self.view addSubview:copylabel];
 

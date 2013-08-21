@@ -9,9 +9,10 @@
 #import "PairingReceiveViewController.h"
 #import "FlatUIKit.h"
 #import <Ink/Ink.h>
-#import "FPSaveController.h"
+#import "SourceListSaveController.h"
 #import "InkFile.h"
 #import "FPAFNetworking.h"
+#import "ThatCloudConstants.h"
 
 @interface PairingReceiveViewController ()
 
@@ -46,7 +47,7 @@
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 30, 540, 30)];
     label.text = [NSString stringWithFormat:@"Enter the Pairing Code:"];
-    label.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:16];
+    label.font = [UIFont fontWithName:LIGHTFONT size:16];
     
     label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:label];
@@ -55,14 +56,14 @@
     filename.text = @"";
     filename.textAlignment = NSTextAlignmentCenter;
     filename.lineBreakMode = NSLineBreakByTruncatingMiddle;
-    filename.font = [UIFont fontWithName:@"HelveticaNeue" size:16];
+    filename.font = [UIFont fontWithName:FONT size:16];
     [self.view addSubview:filename];
     self.filename = filename;
     
     UILabel *mimetype = [[UILabel alloc] initWithFrame:CGRectMake((540-400)/2, 150, 400, 30)];
     mimetype.textAlignment = NSTextAlignmentCenter;
     mimetype.text = @"";
-    mimetype.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:14];
+    mimetype.font = [UIFont fontWithName:LIGHTFONT size:14];
     mimetype.backgroundColor = [UIColor clearColor];
     mimetype.textColor = [UIColor grayColor];
     [self.view addSubview:mimetype];
@@ -169,7 +170,7 @@
 
 - (void)saveFile:(id)sender {
         
-        FPSaveController *sc = [[FPSaveController alloc] init];
+        SourceListSaveController *sc = [[SourceListSaveController alloc] init];
         sc.fpdelegate = self;
         sc.dataType = self.myfile.mimetype;
         sc.data = self.myfile.data;
@@ -178,27 +179,22 @@
         sc.modalPresentationStyle = UIModalPresentationFormSheet;
     
         [self presentViewController:sc animated:YES completion:nil];
-    
-        //[self.navigationController dismissViewControllerAnimated:NO completion:nil];
-    
-    
-    
 }
 
-- (void)FPSaveControllerDidSave:(FPSaveController *)picker {
+- (void)FPSaveControllerDidSave:(SourceListSaveController *)picker {
     //user selected save. save not complete yet.
 }
 
-- (void)FPSaveControllerDidCancel:(FPSaveController *)picker {
+- (void)FPSaveControllerDidCancel:(SourceListSaveController *)picker {
     [self dismissViewControllerAnimated:YES completion:nil];
     [Ink return];
 }
 
-- (void)FPSaveController:(FPSaveController *)picker didError:(NSDictionary *)info {
+- (void)FPSaveController:(SourceListSaveController *)picker didError:(NSDictionary *)info {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)FPSaveController:(FPSaveController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+- (void)FPSaveController:(SourceListSaveController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     [self dismissViewControllerAnimated:NO completion:nil];
     [self.navigationController dismissViewControllerAnimated:NO completion:nil];
 

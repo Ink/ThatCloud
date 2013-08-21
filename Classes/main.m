@@ -7,11 +7,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "ITCAppDelegate.h"
+#import "ThatCloudAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([ITCAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([ThatCloudAppDelegate class]));
     }
 }

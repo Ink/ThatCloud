@@ -123,4 +123,27 @@ static NSDictionary *general_mimetype = nil;
     }
 }
 
++ (BOOL) mimetypeCheck:(NSArray *)mimes1 against:(NSArray *)mimes2 {
+    if ([mimes1 count] == 0 || [mimes2 count] == 0){
+        return NO;
+    }
+    
+    for (NSString *mimetype1 in mimes1){
+        for (NSString *mimetype2 in mimes2){
+            if ([mimetype1 isEqualToString:@"*/*"] || [mimetype2 isEqualToString:@"*/*"]){
+                return YES;
+            }
+            if ([mimetype1 isEqualToString: mimetype2]){
+                return YES;
+            }
+            NSArray *splitType1 = [mimetype1 componentsSeparatedByString:@"/"];
+            NSArray *splitType2 = [mimetype2 componentsSeparatedByString:@"/"];
+            if ([[splitType1 objectAtIndex:0] isEqualToString:[splitType2 objectAtIndex:0]]){
+                return YES;
+            }
+        }
+    }
+    return NO;
+}
+
 @end

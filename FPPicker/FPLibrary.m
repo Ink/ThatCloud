@@ -39,7 +39,6 @@
         NSLog(@"Uploading Multipart");
         [FPLibrary multipartUploadData:filedata named:filename ofMimetype:mimetype success:success failure:failure];
     }
-    
 }
 
 
@@ -92,7 +91,7 @@
     
 
     int filesize = [filedata length];
-    int numOfChunks = ceil(1.0*filesize/fpMaxChunkSize);
+    int numOfChunks = (int)ceil(1.0*filesize/fpMaxChunkSize);
     
     NSLog(@"Filesize: %d chuncks: %d", filesize, numOfChunks);
     
@@ -250,7 +249,7 @@
         filedata = UIImagePNGRepresentation(image);
         filename = @"camera.png";
     } else {
-        filedata = UIImageJPEGRepresentation(image, 0.6);
+        filedata = UIImageJPEGRepresentation(image, 0.6f);
         filename = @"camera.jpg";
     }
     
@@ -321,7 +320,7 @@
         UIImage* image = [UIImage imageWithCGImage:[representation fullResolutionImage] 
                                              scale:[representation scale] orientation:(UIImageOrientation)[representation orientation]];
         
-        filedata = UIImageJPEGRepresentation(image, 0.6);
+        filedata = UIImageJPEGRepresentation(image, 0.6f);
     }
 
     if ([representation respondsToSelector:@selector(filename)]){
@@ -554,7 +553,7 @@
             
         case UIImageOrientationDown: //EXIF = 3
             transform = CGAffineTransformMakeTranslation(imageSize.width, imageSize.height);
-            transform = CGAffineTransformRotate(transform, M_PI);
+            transform = CGAffineTransformRotate(transform, (float)M_PI);
             break;
             
         case UIImageOrientationDownMirrored: //EXIF = 4
@@ -568,7 +567,7 @@
             bounds.size.width = boundHeight;
             transform = CGAffineTransformMakeTranslation(imageSize.height, imageSize.width);
             transform = CGAffineTransformScale(transform, -1.0, 1.0);
-            transform = CGAffineTransformRotate(transform, 3.0 * M_PI / 2.0);
+            transform = CGAffineTransformRotate(transform, 3.0 * (float)M_PI / 2.0);
             break;
             
         case UIImageOrientationLeft: //EXIF = 6
@@ -576,7 +575,7 @@
             bounds.size.height = bounds.size.width;
             bounds.size.width = boundHeight;
             transform = CGAffineTransformMakeTranslation(0.0, imageSize.width);
-            transform = CGAffineTransformRotate(transform, 3.0 * M_PI / 2.0);
+            transform = CGAffineTransformRotate(transform, 3.0 * (float)M_PI / 2.0);
             break;
             
         case UIImageOrientationRightMirrored: //EXIF = 7
@@ -584,7 +583,7 @@
             bounds.size.height = bounds.size.width;
             bounds.size.width = boundHeight;
             transform = CGAffineTransformMakeScale(-1.0, 1.0);
-            transform = CGAffineTransformRotate(transform, M_PI / 2.0);
+            transform = CGAffineTransformRotate(transform, (float)M_PI / 2.0);
             break;
             
         case UIImageOrientationRight: //EXIF = 8
@@ -592,7 +591,7 @@
             bounds.size.height = bounds.size.width;
             bounds.size.width = boundHeight;
             transform = CGAffineTransformMakeTranslation(imageSize.height, 0.0);
-            transform = CGAffineTransformRotate(transform, M_PI / 2.0);
+            transform = CGAffineTransformRotate(transform, (float)M_PI / 2.0);
             break;
             
         default:

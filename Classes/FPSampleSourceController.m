@@ -7,13 +7,14 @@
 //
 
 #import "FPSampleSourceController.h"
-#import "FPSaveController.h"
+#import "SourceListSaveController.h"
 #import "FPAuthController.h"
 #import "FPInternalHeaders.h"
 #import "FPThumbCell.h"
 #import "FPMimetype.h"
 
 #import "FlatUIKit.h"
+#import "ThatCloudConstants.h"
 
 #import <QuartzCore/QuartzCore.h>
 
@@ -158,7 +159,7 @@
         }
     }
     cell.tag = indexPath.row;
-    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18];
+    cell.textLabel.font = [UIFont fontWithName:LIGHTFONT size:18];
     
     
     if (indexPath.row >= [self.contents count]){ return cell; }

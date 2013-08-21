@@ -126,7 +126,7 @@
     CGRect rect = CGRectMake(self.padding, self.padding, self.thumbSize, self.thumbSize);
     
     for (int i=0; i<self.numPerRow; i++) {
-        int index = self.numPerRow*indexPath.row + i;
+        NSUInteger index = self.numPerRow*indexPath.row + i;
         NSLog(@"Index %d", index);
         if (index >= [self.photos count]){
             break;
@@ -152,7 +152,7 @@
             UILabel *headingLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, backgroundImage.size.height - 10, backgroundImage.size.width, 10)];
             [headingLabel setTextColor:[UIColor whiteColor]];
             [headingLabel setBackgroundColor:[UIColor blackColor]];
-            [headingLabel setAlpha:0.7];
+            [headingLabel setAlpha:0.7f];
             [headingLabel setFont:[UIFont systemFontOfSize:14]];
             [headingLabel setTextAlignment:NSTextAlignmentRight];
             headingLabel.text = [FPLibrary formatTimeInSeconds: ceil([[asset valueForProperty:ALAssetPropertyDuration] doubleValue])];
@@ -188,15 +188,18 @@
     CGPoint tapPoint = [sender locationOfTouch:sender.view.tag inView:sender.view];
     
     int colIndex = (int) fmin(floor(tapPoint.x/(self.thumbSize+self.padding)), self.numPerRow-1);
-    
+    if (colIndex < 0) {
+        colIndex = 0;
+    }
+
     //Do nothing if there isn't a corresponding image view.
-    if (colIndex >= [sender.view.subviews count]){
+    if ((NSUInteger)colIndex >= [sender.view.subviews count]){
         return;
     }
     
     [FPMBProgressHUD showHUDAddedTo:self.view animated:NO];
     
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC);
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^(void){
         UIImageView *selectedView = [sender.view.subviews objectAtIndex:colIndex];
         [self objectSelectedAtIndex:selectedView.tag];    
@@ -252,7 +255,9 @@
         NSLog(@"uti: %@", [representation UTI]);
 
         
-        [FPLibrary uploadAsset:asset withOptions:[[NSDictionary alloc] init] shouldUpload:shouldUpload success:^(id JSON, NSURL *localurl) {
+        [FPLibrary uploadAsset:asset withOptions:[[NSDictionary alloc] init] shouldUpload:shouldUpload success:^(id JSON_id, NSURL *localurl) {
+            NSDictionary *JSON = JSON_id;
+            [JSON objectForKey:@"foo"];
             NSLog(@"JSON %@", JSON);
             NSLog(@"JSON %@", [[[[JSON objectForKey:@"data"] objectAtIndex:0] objectForKey:@"data"] objectForKey:@"filename"]);
             NSDictionary *output = [[NSDictionary alloc] initWithObjectsAndKeys:

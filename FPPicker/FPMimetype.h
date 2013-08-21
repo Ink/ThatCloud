@@ -11,5 +11,6 @@
 @interface FPMimetype : NSObject
 
 + (NSString*) iconPathForMimetype: (NSString *)mimetype;
++ (BOOL) mimetypeCheck:(NSArray *)mimes1 against:(NSArray *)mimes2;
 
 @end

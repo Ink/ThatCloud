@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class FPPickerController;
-@class FPSaveController;
+@class SourceListSaveController;
 
 @protocol FPPickerDelegate <NSObject>
 
@@ -21,20 +21,20 @@
 
 @protocol FPSaveDelegate <NSObject>
 
-- (void)FPSaveControllerDidSave:(FPSaveController *)picker;
-- (void)FPSaveController:(FPSaveController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info;
-- (void)FPSaveControllerDidCancel:(FPSaveController *)picker;
-- (void)FPSaveController:(FPSaveController *)picker didError:(NSDictionary *)info;
+- (void)FPSaveControllerDidSave:(SourceListSaveController *)picker;
+- (void)FPSaveController:(SourceListSaveController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info;
+- (void)FPSaveControllerDidCancel:(SourceListSaveController *)picker;
+- (void)FPSaveController:(SourceListSaveController *)picker didError:(NSDictionary *)info;
 
 @end
 
-@class FPSourceController;
+@class FileSourceController;
 
 @protocol FPSourcePickerDelegate <NSObject>
 
-- (void)FPSourceController:(FPSourceController *)picker didPickMediaWithInfo:(NSDictionary *) info;
-- (void)FPSourceController:(FPSourceController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info;
-- (void)FPSourceControllerDidCancel:(FPSourceController *)picker;
+- (void)FPSourceController:(FileSourceController *)picker didPickMediaWithInfo:(NSDictionary *) info;
+- (void)FPSourceController:(FileSourceController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info;
+- (void)FPSourceControllerDidCancel:(FileSourceController *)picker;
 
 @end
 
@@ -44,9 +44,9 @@
 @property (nonatomic, strong) NSURL *dataurl;
 @property (nonatomic, strong) NSString *dataType;
 
-- (void)FPSourceController:(FPSourceController *)picker didPickMediaWithInfo:(NSDictionary *) info;
-- (void)FPSourceController:(FPSourceController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info;
-- (void)FPSourceControllerDidCancel:(FPSourceController *)picker;
+- (void)FPSourceController:(FileSourceController *)picker didPickMediaWithInfo:(NSDictionary *) info;
+- (void)FPSourceController:(FileSourceController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info;
+- (void)FPSourceControllerDidCancel:(FileSourceController *)picker;
 
 @end
 

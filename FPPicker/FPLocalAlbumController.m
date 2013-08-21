@@ -85,7 +85,7 @@
                 return;
             }
             NSString *sGroupPropertyName = (NSString *)[group valueForProperty:ALAssetsGroupPropertyName];
-            NSUInteger nType = [[group valueForProperty:ALAssetsGroupPropertyType] intValue];
+            NSUInteger nType = (NSUInteger)[[group valueForProperty:ALAssetsGroupPropertyType] intValue];
             NSLog(@"GROUP: %@ %d", sGroupPropertyName, nType);
             
             if (showImages && !showVideo){

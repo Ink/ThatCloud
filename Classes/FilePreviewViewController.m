@@ -15,10 +15,6 @@
 
 @interface FilePreviewViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
-
-@property (nonatomic, assign) BOOL saving;
-//@property (nonatomic, weak) DBRestClient* restClient;
-
 @end
 
 @implementation FilePreviewViewController {
@@ -49,12 +45,6 @@
     // Error code -999 is a indicates a request was cancelled (which it was, since we started loading a different file).
     if (error.code != -999) {
         NSLog(@"ERROR loading file, %@", error);
-        /*
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"select" ofType:@"png"];
-        NSURL *url = [NSURL fileURLWithPath:filePath];
-        NSURLRequest *req = [NSURLRequest requestWithURL:url];
-        [_webView loadRequest:req];
-        */
         [self showNoPreviewScreen];
     }
 }
@@ -75,10 +65,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void) cancel {
-    [self.master reset];
 }
 
 - (void) showSpinner {
@@ -102,8 +88,6 @@
     hud.mode = FPMBProgressHUDModeAnnularDeterminate;
     hud.progress = progress;
     hud.labelText = @"Loading";
-
-    NSLog(@"%f", progress);
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
@@ -119,9 +103,6 @@
     f.fileName = @"Example-Ink-Logo.png";
     [f writeData:UIImagePNGRepresentation(image)];
     [self previewFile:f withHide:NO];
-    
-    // Hah, what a massive hack.
-    //[_webView loadHTMLString:@"<html><head></head><body></body></html>" baseURL:nil];
 }
 
 - (void) previewFile:(InkFile*)myFile {
@@ -143,15 +124,15 @@
         if ([action.type isEqualToString: INKActionType_Return]) {
             [self saveBlob: blob withFilename:myFile.fileName];
         } else {
-            NSLog(@"Return cancel. Not doing anything fancy.");
+            // Return_Cancel
+            NSLog(@"Return cancel.");
         }
     }];
     UIButton * button = [self.view INKAddLaunchButton];
     if (button) {
         inkButton = button;
     }
-    //[_webView reload];
-
+    
     if (shouldHideMaster){
         if (self.masterPopoverController != nil) {
             [self.masterPopoverController dismissPopoverAnimated:YES];
@@ -168,11 +149,8 @@
     if (!myFile.fphandle){
         self.navigationItem.rightBarButtonItems = @[receive];
     }
-    //self.navigationItem.leftBarButtonItem = nil;
+
     self.navigationItem.prompt = nil;
-    
-    //Will overwrite the menu button if rotation happens during.
-    //self.title = [myFile.fileName stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 }
 
 - (void) viewWillLayoutSubviews {
@@ -187,11 +165,10 @@
     NSLog(@"Saving the blob");
     [self.myFile loadFromInkBlob:blob];
     blob.filename = filename;
+    
+    // There has to be some base url, but it's never actually shown.
     [_webView loadData:[self.myFile getData] MIMEType:self.myFile.mimetype textEncodingName:nil baseURL:[NSURL URLWithString:@"http://www.example.com"]];
     [self filepickerPost:blob];
-//    [self.master reset];
-
-    self.myFile.mode =@"Regular";
 }
 
 - (void) filepickerPost:(INKBlob *)blob {
@@ -199,10 +176,9 @@
     
     [FPLibrary uploadData:blob.data named:blob.filename toPath:self.myFile.inkPath ofMimetype:mimeType withOptions:nil success:^(id JSON) {
         // ok
-        NSLog(@"Test it out!");
+        NSLog(@"File stored successful");
     }failure:^(NSError *error, id JSON) {
-        NSLog(@"Uh oh");
-        // not ok
+        NSLog(@"Fail to save the fail: %@, %@", error, JSON);
         // TODO: retry or something
     }];
 }
@@ -216,11 +192,6 @@
     nv.modalPresentationStyle = UIModalPresentationFormSheet;
     [self presentViewController:nv animated:YES completion:nil];
     
-                                 
-    
-    
-    //UIAlertView *aa = [[UIAlertView alloc] initWithTitle:@"Pairing Code" message:[NSString stringWithFormat:@"Code is %@",self.myFile.fphandle] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
-    //[aa show];
 }
 
 - (void)redeemPairingCode:(id)sender {
@@ -230,17 +201,12 @@
     [nv pushViewController:vc animated:YES];
     nv.modalPresentationStyle = UIModalPresentationFormSheet;
     [self presentViewController:nv animated:YES completion:nil];
-    
-    
-    
-    
-    //UIAlertView *aa = [[UIAlertView alloc] initWithTitle:@"Pairing Code" message:[NSString stringWithFormat:@"Code is %@",self.myFile.fphandle] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
-    //[aa show];
+
 }
 
 - (void)moveFile:(id)sender {
     
-    FPSaveController *sc = [[FPSaveController alloc] init];
+    SourceListSaveController *sc = [[SourceListSaveController alloc] init];
     sc.fpdelegate = self;
     sc.dataType = self.myFile.mimetype;
     sc.data = [self.myFile getData];
@@ -253,19 +219,19 @@
 
 
 
-- (void)FPSaveControllerDidSave:(FPSaveController *)picker {
+- (void)FPSaveControllerDidSave:(SourceListSaveController *)picker {
     //user selected save. save not complete yet.
 }
 
-- (void)FPSaveControllerDidCancel:(FPSaveController *)picker {
+- (void)FPSaveControllerDidCancel:(SourceListSaveController *)picker {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)FPSaveController:(FPSaveController *)picker didError:(NSDictionary *)info {
+- (void)FPSaveController:(SourceListSaveController *)picker didError:(NSDictionary *)info {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)FPSaveController:(FPSaveController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+- (void)FPSaveController:(SourceListSaveController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     [self dismissViewControllerAnimated:NO completion:nil];
 }
 

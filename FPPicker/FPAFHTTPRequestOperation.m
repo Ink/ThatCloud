@@ -78,7 +78,8 @@
 }
 
 - (BOOL)hasAcceptableStatusCode {
-    return !self.acceptableStatusCodes || [self.acceptableStatusCodes containsIndex:[self.response statusCode]];
+    NSUInteger status = (NSUInteger)[self.response statusCode];
+    return !self.acceptableStatusCodes || [self.acceptableStatusCodes containsIndex:status];
 }
 
 - (BOOL)hasAcceptableContentType {

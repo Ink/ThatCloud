@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "FPInternalHeaders.h"
-#import "FPSourceController.h"
+#import "FileSourceController.h"
 
-@interface FPSearchController : FPSourceController <UISearchDisplayDelegate>
+@interface FPSearchController : FileSourceController <UISearchDisplayDelegate>
 
 @property (nonatomic, strong) IBOutlet UISearchBar *searchBar;
 @property (nonatomic, strong) IBOutlet UISearchDisplayController *searchDisplayController;
