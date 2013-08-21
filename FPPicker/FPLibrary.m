@@ -3,7 +3,7 @@
 //  FPPicker
 //
 //  Created by Liyan David Chang on 6/20/12.
-//  Copyright (c) 2012 Ink (Cloudtop Inc), All rights reserved.
+//  Copyright (c) 2013 Ink (Cloudtop Inc), All rights reserved.
 //
 
 #import "FPLibrary.h"

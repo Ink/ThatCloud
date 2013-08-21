@@ -2,7 +2,7 @@
 //  InkFile.m
 //
 //  Created by Darko Vukovic on 7/11/13.
-//  Copyright (c) 2013 Ink. All rights reserved.
+//  Copyright (c) 2013 Ink (Cloudtop Inc). All rights reserved.
 //
 
 #import "InkFile.h"

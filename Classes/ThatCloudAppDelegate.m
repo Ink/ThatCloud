@@ -1,8 +1,8 @@
 //
-//  ITCAppDelegate.m
+//  ThatCloudAppDelegate.m
 //
 //  Created by Ink on 8/1/13.
-//  Copyright (c) 2013 Ink. All rights reserved.
+//  Copyright (c) 2013 Ink (Cloudtop Inc), All rights reserved.
 //
 
 #import "ThatCloudAppDelegate.h"

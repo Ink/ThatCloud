@@ -1057,9 +1057,9 @@
 		99DDE343168B7B780071241C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = DBB;
+				CLASSPREFIX = TC;
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "iRare Media";
+				ORGANIZATIONNAME = Ink;
 			};
 			buildConfigurationList = 99DDE346168B7B780071241C /* Build configuration list for PBXProject "thatcloud" */;
 			compatibilityVersion = "Xcode 3.2";
