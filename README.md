@@ -2,7 +2,7 @@ ThatCloud
 =========
 
 ThatCloud is an open-source iOS application that connects all of your cloud content into the Ink ecosystem of apps. It enables you to take your content from any of 10 different storage locations and view it, interact with it with other Ink partner apps and copy it to other cloud storage locations. The full list of features is detailed in our [blog post](http://blog.inkmobility.com/post/58830177894/introducing-thatcloud-your-portal-to-your-cloud).
-
+![ThatCloud in action](https://lh5.googleusercontent.com/mB7WeBAUMMFwbrwFCSNMcD9D03DHObkLlldlPl4HH4Yv2nb7Wc1xHnXMfzfc3QdtM0BQOO__q03b56PNkjUIJz5gtR9wu8Wj7lQM8TygTqQTzeREPAq3E3tw)
 
 Ink Integration Details
 =======================
