@@ -89,10 +89,11 @@
      name:UITextFieldTextDidChangeNotification
      object:tx];
     
-    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wenum-conversion"
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonSystemItemCancel target:self action:@selector(cancelAction:)];
     [cancelButton configureFlatButtonWithColor:[UIColor peterRiverColor] highlightedColor:[UIColor belizeHoleColor] cornerRadius:3];
-    
+#pragma clang diagnostic pop
     self.navigationItem.rightBarButtonItem = cancelButton;
     
 }

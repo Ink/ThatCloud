@@ -139,7 +139,7 @@
                 success(JSON);
             };
             
-            __block void (^endPartFail) (NSURLRequest *, NSHTTPURLResponse *, NSError *, id);
+            void (^endPartFail) (NSURLRequest *, NSHTTPURLResponse *, NSError *, id);
             
             endPartFail =  [^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
                 if (numberOfTriesFinish >= fpNumRetries){
@@ -191,7 +191,7 @@
             };
             
             __block int numberOfTries = 0;
-            __block void (^onePartFail)(NSURLRequest *, NSHTTPURLResponse *, NSError *, id);
+            void (^onePartFail)(NSURLRequest *, NSHTTPURLResponse *, NSError *, id);
             onePartFail =  [^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
                 if (numberOfTries > fpNumRetries){
                     NSLog(@"Fail: %@ %@", error, JSON);
@@ -208,7 +208,7 @@
     };
     
     __block int numberOfTriesBegin = 0;
-    __block void (^beginPartFail) (NSURLRequest *, NSHTTPURLResponse *, NSError *, id);
+    void (^beginPartFail) (NSURLRequest *, NSHTTPURLResponse *, NSError *, id);
     beginPartFail =  [^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
         if (numberOfTriesBegin > fpNumRetries){
             NSLog(@"Response error: %@ %@", error, JSON);
@@ -304,8 +304,8 @@
     
     
     if ([mimetype isEqualToString:@"video/quicktime"]){
-        Byte *buffer = (Byte*)malloc(representation.size);
-        NSUInteger buffered = [representation getBytes:buffer fromOffset:0.0 length:representation.size error:nil];
+        Byte *buffer = (Byte*)malloc((size_t)representation.size);
+        NSUInteger buffered = [representation getBytes:buffer fromOffset:0.0 length:(size_t)representation.size error:nil];
         filedata = [NSData dataWithBytesNoCopy:buffer length:buffered freeWhenDone:YES];
         //filedata = [[NSData alloc] initWithContentsOfURL:[representation url]];
     } else if ([mimetype isEqualToString:@"image/png"]){

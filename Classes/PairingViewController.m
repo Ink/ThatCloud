@@ -82,8 +82,12 @@
     
     UIPasteboard *pb = [UIPasteboard generalPasteboard];
     [pb setString:self.fphandle];
-    
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wenum-conversion"
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonSystemItemCancel target:self action:@selector(cancelAction:)];
+#pragma clang diagnostic pop
+    
     [cancelButton configureFlatButtonWithColor:[UIColor peterRiverColor] highlightedColor:[UIColor belizeHoleColor] cornerRadius:3];
 
     self.navigationItem.rightBarButtonItem = cancelButton;
