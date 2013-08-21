@@ -12,3 +12,10 @@ Ink is open sourcing  our sample apps for several reasons:
   2. Support other iOS Framework companies
   
   The sample apps are a place where other framework companies can integrate their product to show it off to the world, or simply a place to demonstrate integration strategies to your customers.
+
+Ink Integration Details
+=======================
+The Ink Mobile framework transforms ThatCloud from a simple file preview to a full platform to interact with your content. ThatCloud integrates with Ink in two locations:
+
+  1. ThatCloudAppDelegate registers incoming actions and provides their handlers.
+  2. FilePreviewViewController enables the file preview view to transmit content to other Ink enabled apps.
