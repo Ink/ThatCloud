@@ -20,10 +20,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     ATConnect *connection = [ATConnect sharedConnection];
     connection.apiKey = kApptentiveAPIKey;
-
+    
+    // Initialize Ink
     [Ink setupWithAppKey:@"AneRowxpcloudAGkdngz"];
     [[INKCoreManager sharedManager] registerAdditionalURLScheme:@"thatcloud"];
     
+    // Register our incoming actions
     INKAction *store = [INKAction action:@"Store in ThatCloud" type:INKActionType_Store];
     [Ink registerAction:store withTarget:self selector:@selector(storeBlob:action:error:)];
     

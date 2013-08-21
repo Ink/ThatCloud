@@ -115,6 +115,9 @@
     NSString *mimeType = (__bridge_transfer NSString *)UTTypeCopyPreferredTagWithClass((__bridge CFStringRef)(myFile.uti), kUTTagClassMIMEType);
     [_webView loadData:[myFile getData] MIMEType:mimeType textEncodingName:nil baseURL:[NSURL URLWithString:@"http://www.example.com"]];
     self.view.userInteractionEnabled = YES;
+    
+    // Enable our view for Ink
+    // Uses dynamic blob so that if the file is big or slow to load it won't block the Ink dialog
     [self.view INKEnableWithUTI:myFile.uti dynamicBlob:^INKBlob *{
         INKBlob *blob = [INKBlob blobFromData:[myFile getData]];
         blob.uti = myFile.uti;
@@ -128,6 +131,8 @@
             NSLog(@"Return cancel.");
         }
     }];
+    
+    // Adds the Ink button to the top right corner
     UIButton * button = [self.view INKAddLaunchButton];
     if (button) {
         inkButton = button;
