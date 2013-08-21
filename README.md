@@ -15,7 +15,7 @@ A few ThatCloud features:
 With ThatCloud, the iPad is a full-blown productivity device - you no longer need to worry about not having a filesystem on your iPad. The full list of features is detailed in our [blog post](http://blog.inkmobility.com/post/58830177894/introducing-thatcloud-your-portal-to-your-cloud).
 
 ThatCloud is also currently available on the [App Store](https://itunes.apple.com/us/app/thatcloud/id681023311?mt=8)
-![ThatCloud in action](https://lh6.googleusercontent.com/GrPu0vO_1ZDymTak2kqOZBfH369zyvdNxX_k6uYN6Wgbu73goYM1OB83xLSYciiD0XLvoQX0NzKIWYKOfnoZ8nC2wYaz-Wpdz_AEq_5UHgP66R26C0rZwfUbFw)
+![ThatCloud in action](https://s3.amazonaws.com/your_own_bucket/Cq4qJEoAQmWLSZXbKedw_awesome)
 
 Ink Integration Details
 =======================
