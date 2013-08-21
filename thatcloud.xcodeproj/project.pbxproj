@@ -167,15 +167,11 @@
 		EA8B73DA17A0817C003EF80D /* FPAFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8B737A17A0817C003EF80D /* FPAFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EA8B73DB17A0817C003EF80D /* FPAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8B737C17A0817C003EF80D /* FPAuthController.m */; };
 		EA8B73DC17A0817C003EF80D /* FPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8B737F17A0817C003EF80D /* FPConstants.m */; };
-		EA8B73DD17A0817C003EF80D /* FPInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8B738217A0817C003EF80D /* FPInfoViewController.m */; };
 		EA8B73DE17A0817C003EF80D /* FPLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8B738517A0817C003EF80D /* FPLibrary.m */; };
-		EA8B73DF17A0817C003EF80D /* FPLocalAlbumController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8B738717A0817C003EF80D /* FPLocalAlbumController.m */; };
-		EA8B73E017A0817C003EF80D /* FPLocalController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8B738917A0817C003EF80D /* FPLocalController.m */; };
 		EA8B73E117A0817C003EF80D /* FPMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8B738B17A0817C003EF80D /* FPMBProgressHUD.m */; };
 		EA8B73E217A0817C003EF80D /* FPPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8B738F17A0817C003EF80D /* FPPickerController.m */; };
 		EA8B73E317A0817C003EF80D /* SourceListSaveController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8B739117A0817C003EF80D /* SourceListSaveController.m */; };
 		EA8B73E417A0817C003EF80D /* SaveController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8B739317A0817C003EF80D /* SaveController.m */; };
-		EA8B73E517A0817C003EF80D /* FPSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8B739517A0817C003EF80D /* FPSearchController.m */; };
 		EA8B73E617A0817C003EF80D /* FPSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8B739717A0817C003EF80D /* FPSource.m */; };
 		EA8B73E717A0817C003EF80D /* FileSourceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8B739917A0817C003EF80D /* FileSourceController.m */; };
 		EA8B73E817A0817C003EF80D /* FileSourceListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8B739B17A0817C003EF80D /* FileSourceListController.m */; };
@@ -328,8 +324,6 @@
 		8310823217A500DD008713FC /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		8310823417A5016C008713FC /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		8310823617A50172008713FC /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
-		8310823817A502D4008713FC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		8310823C17A503E2008713FC /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
 		8310823E17A50531008713FC /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder.png; sourceTree = "<group>"; };
 		836B494A17A72D8A00781283 /* no_preview@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no_preview@2x.png"; sourceTree = "<group>"; };
 		8374922517A784760084FEAC /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "../Icon-72.png"; sourceTree = "<group>"; };
@@ -487,15 +481,9 @@
 		EA8B737E17A0817C003EF80D /* FPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPConstants.h; sourceTree = "<group>"; };
 		EA8B737F17A0817C003EF80D /* FPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPConstants.m; sourceTree = "<group>"; };
 		EA8B738017A0817C003EF80D /* FPExternalHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPExternalHeaders.h; sourceTree = "<group>"; };
-		EA8B738117A0817C003EF80D /* FPInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPInfoViewController.h; sourceTree = "<group>"; };
-		EA8B738217A0817C003EF80D /* FPInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPInfoViewController.m; sourceTree = "<group>"; };
 		EA8B738317A0817C003EF80D /* FPInternalHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPInternalHeaders.h; sourceTree = "<group>"; };
 		EA8B738417A0817C003EF80D /* FPLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLibrary.h; sourceTree = "<group>"; };
 		EA8B738517A0817C003EF80D /* FPLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLibrary.m; sourceTree = "<group>"; };
-		EA8B738617A0817C003EF80D /* FPLocalAlbumController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLocalAlbumController.h; sourceTree = "<group>"; };
-		EA8B738717A0817C003EF80D /* FPLocalAlbumController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLocalAlbumController.m; sourceTree = "<group>"; };
-		EA8B738817A0817C003EF80D /* FPLocalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPLocalController.h; sourceTree = "<group>"; };
-		EA8B738917A0817C003EF80D /* FPLocalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPLocalController.m; sourceTree = "<group>"; };
 		EA8B738A17A0817C003EF80D /* FPMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPMBProgressHUD.h; sourceTree = "<group>"; };
 		EA8B738B17A0817C003EF80D /* FPMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPMBProgressHUD.m; sourceTree = "<group>"; };
 		EA8B738C17A0817C003EF80D /* FPPicker-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FPPicker-Prefix.pch"; sourceTree = "<group>"; };
@@ -506,8 +494,6 @@
 		EA8B739117A0817C003EF80D /* SourceListSaveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SourceListSaveController.m; path = ../FPPicker/SourceListSaveController.m; sourceTree = "<group>"; };
 		EA8B739217A0817C003EF80D /* SaveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SaveController.h; path = ../FPPicker/SaveController.h; sourceTree = "<group>"; };
 		EA8B739317A0817C003EF80D /* SaveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SaveController.m; path = ../FPPicker/SaveController.m; sourceTree = "<group>"; };
-		EA8B739417A0817C003EF80D /* FPSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSearchController.h; sourceTree = "<group>"; };
-		EA8B739517A0817C003EF80D /* FPSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSearchController.m; sourceTree = "<group>"; };
 		EA8B739617A0817C003EF80D /* FPSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSource.h; sourceTree = "<group>"; };
 		EA8B739717A0817C003EF80D /* FPSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSource.m; sourceTree = "<group>"; };
 		EA8B739817A0817C003EF80D /* FileSourceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileSourceController.h; path = ../FPPicker/FileSourceController.h; sourceTree = "<group>"; };
@@ -791,8 +777,6 @@
 		9934FCC7170F7FEE00890A53 /* Icons and Backgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				8310823C17A503E2008713FC /* icon2.png */,
-				8310823817A502D4008713FC /* icon.png */,
 				8310823617A50172008713FC /* Default-Portrait~ipad.png */,
 				8310823417A5016C008713FC /* Default-Portrait@2x~ipad.png */,
 				8310823217A500DD008713FC /* Default-Landscape@2x~ipad.png */,
@@ -1004,15 +988,9 @@
 				EA8B737E17A0817C003EF80D /* FPConstants.h */,
 				EA8B737F17A0817C003EF80D /* FPConstants.m */,
 				EA8B738017A0817C003EF80D /* FPExternalHeaders.h */,
-				EA8B738117A0817C003EF80D /* FPInfoViewController.h */,
-				EA8B738217A0817C003EF80D /* FPInfoViewController.m */,
 				EA8B738317A0817C003EF80D /* FPInternalHeaders.h */,
 				EA8B738417A0817C003EF80D /* FPLibrary.h */,
 				EA8B738517A0817C003EF80D /* FPLibrary.m */,
-				EA8B738617A0817C003EF80D /* FPLocalAlbumController.h */,
-				EA8B738717A0817C003EF80D /* FPLocalAlbumController.m */,
-				EA8B738817A0817C003EF80D /* FPLocalController.h */,
-				EA8B738917A0817C003EF80D /* FPLocalController.m */,
 				EA8B738A17A0817C003EF80D /* FPMBProgressHUD.h */,
 				EA8B738B17A0817C003EF80D /* FPMBProgressHUD.m */,
 				8300AC1517A5C3F400629E85 /* FPMimetype.h */,
@@ -1021,8 +999,6 @@
 				EA8B738D17A0817C003EF80D /* FPPicker.h */,
 				EA8B738E17A0817C003EF80D /* FPPickerController.h */,
 				EA8B738F17A0817C003EF80D /* FPPickerController.m */,
-				EA8B739417A0817C003EF80D /* FPSearchController.h */,
-				EA8B739517A0817C003EF80D /* FPSearchController.m */,
 				EA8B739617A0817C003EF80D /* FPSource.h */,
 				EA8B739717A0817C003EF80D /* FPSource.m */,
 				02B6EE0A17B502840016626A /* FPSampleSourceController.h */,
@@ -1335,15 +1311,11 @@
 				EA8B73DA17A0817C003EF80D /* FPAFXMLRequestOperation.m in Sources */,
 				EA8B73DB17A0817C003EF80D /* FPAuthController.m in Sources */,
 				EA8B73DC17A0817C003EF80D /* FPConstants.m in Sources */,
-				EA8B73DD17A0817C003EF80D /* FPInfoViewController.m in Sources */,
 				EA8B73DE17A0817C003EF80D /* FPLibrary.m in Sources */,
-				EA8B73DF17A0817C003EF80D /* FPLocalAlbumController.m in Sources */,
-				EA8B73E017A0817C003EF80D /* FPLocalController.m in Sources */,
 				EA8B73E117A0817C003EF80D /* FPMBProgressHUD.m in Sources */,
 				EA8B73E217A0817C003EF80D /* FPPickerController.m in Sources */,
 				EA8B73E317A0817C003EF80D /* SourceListSaveController.m in Sources */,
 				EA8B73E417A0817C003EF80D /* SaveController.m in Sources */,
-				EA8B73E517A0817C003EF80D /* FPSearchController.m in Sources */,
 				EA8B73E617A0817C003EF80D /* FPSource.m in Sources */,
 				EA8B73E717A0817C003EF80D /* FileSourceController.m in Sources */,
 				EA8B73E817A0817C003EF80D /* FileSourceListController.m in Sources */,

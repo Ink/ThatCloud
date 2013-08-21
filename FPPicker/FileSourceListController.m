@@ -8,12 +8,9 @@
 
 #import "FileSourceListController.h"
 
-#import "FPLocalAlbumController.h"
 #import "FileSourceController.h"
 #import "SaveController.h"
 #import "SourceListSaveController.h"
-#import "FPSearchController.h"
-#import "FPInfoViewController.h"
 #import "FPMimetype.h"
 #import "ATConnect.h"
 #import <INK/InkCore.h>
@@ -415,18 +412,10 @@
     [super viewWillAppear:animated];
 }
 
-
-
 - (void) cancelButtonRequest:(id)sender {
     NSLog(@"Cancel Button Pressed on Source List");
     [fpdelegate FPSourceControllerDidCancel:nil];
 }
 
-- (void) infoButtonRequest {
-    NSLog(@"Info Button Pressed on Source List");
-    
-    FPInfoViewController *info = [FPInfoViewController alloc];
-    [self.navigationController pushViewController:info animated:YES];
-}
 
 @end
