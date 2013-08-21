@@ -139,8 +139,8 @@
  when the current action is completed.
  
  @see return
- @see returnBlob
- @see returnWithError
+ @see returnBlob:
+ @see returnWithError:
  
  @return Returns if the current app should return.
 */
@@ -149,6 +149,7 @@
 
 /**
  Bring up the Ink workspace to allow the user to return to the calling application.
+ 
  This method should be called when the user completes an Ink workflow but the
  action is one where there is no data to return (i.e. INKActionType_View)
  
@@ -166,19 +167,23 @@
 
 /**
  Bring up the Ink workspace and allow the user to continue their workflow with new data.
+ 
  This method should be called whenever the user completes a workflow and they have new
  data to work with, for example for an edit action.
  
  Before calling this, check the appShouldReturn method.
+ @param blob The new data that was a result of the user completing the desired action.
  @see appShouldReturn
  */
 + (void)returnBlob:(INKBlob*)blob;
 
 /**
  Bring up the Ink workspace and allow the user to continue their workflow but show an error.
+ 
  This method should be called when an error occurred when the current app tried to complete the request.
  
  Before calling this, check the appShouldReturn method.
+ @param error The error that occurred when trying to execute the desired action.
  @see appShouldReturn
  */
 + (void)returnWithError:(NSError*)error;
@@ -213,7 +218,7 @@
  loading spinner, so the faster you can return the blob data the better.
  
  @param UTI The Uniform Type Identifier of the blob, used to filter the aciton list.
- @param dynamicBlob The block that will be called on a background thread to retrieve the blob.
+ @param block The block that will be called on a background thread to retrieve the blob.
  */
 + (void)showWorkspaceWithUTI:(NSString *)UTI dynamicBlob:(INKDynamicBlobBlock)block;
 
@@ -235,11 +240,11 @@
  Opens the Ink workspace with a late-binding blob and a return handler.
  
  This method is a combination of the capabilities of showWorkspaceWithBlob:onReturn: and showWorkspaceWithUTI:dynamicBlob:
- @see showWorkspaceWithBlob:onReturn
+ @see showWorkspaceWithBlob:onReturn:
  @see showWorkspaceWithUTI:dynamicBlob:
  
  @param UTI The Uniform Type Identifier of the blob, used to filter the aciton list.
- @param dynamicBlob The block that will be called on a background thread to retrieve the blob.
+ @param block The block that will be called on a background thread to retrieve the blob.
  @param returnBlock The block to be called with the user finishes their current workflow and returns back to this app.
  */
 + (void)showWorkspaceWithUTI:(NSString *)UTI dynamicBlob:(INKDynamicBlobBlock)block onReturn:(INKActionCallbackBlock)returnBlock;
