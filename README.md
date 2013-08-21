@@ -1,7 +1,7 @@
 ThatCloud
 =========
 
-ThatCloud is an open-source iOS application that helps you Get Work Done. No more saving work until you get back to your desk - with ThatCloud, you can get it done on the go.
+ThatCloud is an open-source iOS application built by [Ink](www.inkmobility.com) that helps you Get Work Done. No more saving work until you get back to your desk - with ThatCloud, you can get it done on the go.
 
 ThatCloud integrates with all of your favorites sources of content, from Dropbox and Box to Gmail attachments and Instagram photos. By offering a single place for you to access, view, and work with all of your content, ThatCloud helps simplify your workflow and enhances your iPad productivity. 
 
@@ -15,7 +15,7 @@ A few ThatCloud features:
 With ThatCloud, the iPad is a full-blown productivity device - you no longer need to worry about not having a filesystem on your iPad. The full list of features is detailed in our [blog post](http://blog.inkmobility.com/post/58830177894/introducing-thatcloud-your-portal-to-your-cloud).
 
 ThatCloud is also currently available on the [App Store](https://itunes.apple.com/us/app/thatcloud/id681023311?mt=8)
-![ThatCloud in action](https://lh5.googleusercontent.com/mB7WeBAUMMFwbrwFCSNMcD9D03DHObkLlldlPl4HH4Yv2nb7Wc1xHnXMfzfc3QdtM0BQOO__q03b56PNkjUIJz5gtR9wu8Wj7lQM8TygTqQTzeREPAq3E3tw)
+![ThatCloud in action](https://lh6.googleusercontent.com/GrPu0vO_1ZDymTak2kqOZBfH369zyvdNxX_k6uYN6Wgbu73goYM1OB83xLSYciiD0XLvoQX0NzKIWYKOfnoZ8nC2wYaz-Wpdz_AEq_5UHgP66R26C0rZwfUbFw)
 
 Ink Integration Details
 =======================
@@ -24,25 +24,28 @@ The Ink Mobile framework transforms ThatCloud from a simple file preview to a fu
   1. ThatCloudAppDelegate registers incoming actions and provides their handlers.
   2. FilePreviewViewController enables the file preview view to transmit content to other Ink enabled apps.
 
-What are the Ink Sample Apps?
+What are the "That" Apps?
 =============================
 
 To demonstrate the power Ink mobile framework, Ink created the "ThatApp" suite of sample apps. Along with ThatCloud, there is also ThatInbox for reading your mail, ThatPDF for editing your documents and ThatPhoto for tweaking your photos. But we want the apps to do more than just showcase the Ink Mobile Framework. That's why we're releasing the apps open source. 
 
 As iOS developers we leverage an incredible amount of software created by the community. By releasing these apps, we hope we can make small contribution back. Here's what you can do with these apps:
-  1. Get your code to the app store 
+  1. Use them!
+  
+  They're your apps and you should be able to do with them what you want. Skin it, fix it, tweak it, improve it. Once you're done, send us a pull request!  
+
+  2. Get your code to the app store 
 
   All of our sample apps are currently in the App store. Developers learning iOS can get their code in the app store   without having to write an entire App. They only need to send a pull request.
 
-
-  2. Support other iOS Framework companies
+  3. Support other iOS Framework companies
   
   The sample apps are a place where other framework companies can integrate their product to show it off to the world, or simply a place to demonstrate integration strategies to your customers.
 
-  3. Evaluate potential hires
+  4. Evaluate potential hires
   
   Want to interview an iOS developer? Test their chops by asking them to add a feature or two a real world app.
 
-  4. Show off your skills
+  5. Show off your skills
   
   Trying to get a job? Point an employer to your merged pull requests to the sample apps as a demonstration of your ability to contribute to real apps.
