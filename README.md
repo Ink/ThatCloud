@@ -1,7 +1,18 @@
 ThatCloud
 =========
 
-ThatCloud is an open-source iOS application that connects all of your cloud content into the [Ink](http://www.inkmobility.com) ecosystem of apps. It enables you to take your content from any of 10 different storage locations and view it, interact with it with other Ink partner apps, and copy it to other cloud storage locations. The full list of features is detailed in our [blog post](http://blog.inkmobility.com/post/58830177894/introducing-thatcloud-your-portal-to-your-cloud).
+ThatCloud is an open-source iOS application that helps you Get Work Done. No more saving work until you get back to your desk - with ThatCloud, you can get it done on the go.
+
+ThatCloud integrates with all of your favorites sources of content, from Dropbox and Box to Gmail attachments and Instagram photos. By offering a single place for you to access, view, and work with all of your content, ThatCloud helps simplify your workflow and enhances your iPad productivity. 
+
+Plus, ThatCloud is the first file management system that connects with Ink, offering you a revolutionary new way to take the content you have and work with it in other apps. Take a contract from your email, sign in, and save it to the cloud using ThatCloud. Or grab a photo from Facebook via ThatCloud, crop it and add touchups, and then save it back to Facebook, all in a matter of taps.
+
+A few ThatCloud features:
+* See a unified view of the content you care about, including Dropbox, Facebook photos, Gmail attachments, Box, Github, GoogleDrive, Instagram, Flickr, Picasa, SkyDrive.
+* Launch that content into other applications using Ink, so that you can view, edit, sign, send, and share your content in your favorite apps in just a few taps.
+* Store to your cloud storage from any Ink-enabled app. No more needing to wait until a developer supports your favorite service - just send it to ThatCloud!
+
+With ThatCloud, the iPad is a full-blown productivity device - you no longer need to worry about not having a filesystem on your iPad. The full list of features is detailed in our [blog post](http://blog.inkmobility.com/post/58830177894/introducing-thatcloud-your-portal-to-your-cloud).
 
 ThatCloud is also currently available on the [App Store](https://itunes.apple.com/us/app/thatcloud/id681023311?mt=8)
 ![ThatCloud in action](https://lh5.googleusercontent.com/mB7WeBAUMMFwbrwFCSNMcD9D03DHObkLlldlPl4HH4Yv2nb7Wc1xHnXMfzfc3QdtM0BQOO__q03b56PNkjUIJz5gtR9wu8Wj7lQM8TygTqQTzeREPAq3E3tw)
