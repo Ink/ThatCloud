@@ -13,7 +13,7 @@
 #import "SourceListSaveController.h"
 #import "FPMimetype.h"
 #import "ATConnect.h"
-#import <INK/InkCore.h>
+#import <INK/Ink.h>
 #import "FPSampleSourceController.h"
 #import "ThatCloudConstants.h"
 
@@ -77,7 +77,10 @@
 }
 
 - (void) cancelAction:(id) sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    // TODO: this is a bit of hack. We should refactor the source list controller to stop checking it's root class
+    [self dismissViewControllerAnimated:YES completion:^{
+        [Ink return];
+    }];
 }
 
 - (bool) readyForSave {

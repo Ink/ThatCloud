@@ -15,7 +15,7 @@ A few ThatCloud features:
 With ThatCloud, the iPad is a full-blown productivity device - you no longer need to worry about not having a filesystem on your iPad. The full list of features is detailed in our [blog post](http://blog.inkmobility.com/post/58830177894/introducing-thatcloud-your-portal-to-your-cloud).
 
 ThatCloud is also currently available on the [App Store](https://itunes.apple.com/us/app/thatcloud/id681023311?mt=8)
-![ThatCloud in action](https://lh6.googleusercontent.com/GrPu0vO_1ZDymTak2kqOZBfH369zyvdNxX_k6uYN6Wgbu73goYM1OB83xLSYciiD0XLvoQX0NzKIWYKOfnoZ8nC2wYaz-Wpdz_AEq_5UHgP66R26C0rZwfUbFw)
+![ThatCloud in action](https://s3.amazonaws.com/your_own_bucket/Cq4qJEoAQmWLSZXbKedw_awesome)
 
 Ink Integration Details
 =======================
@@ -36,7 +36,7 @@ As iOS developers we leverage an incredible amount of software created by the co
 
   2. Get your code to the app store 
 
-  All of our sample apps are currently in the App store. Developers learning iOS can get their code in the app store   without having to write an entire App. They only need to send a pull request.
+  All of our sample apps are currently in the App store. Developers learning iOS can get their code in the app store   without having to write an entire app. They only need to send a pull request.
 
   3. Support other iOS Framework companies
   
