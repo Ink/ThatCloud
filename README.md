@@ -36,7 +36,7 @@ As iOS developers we leverage an incredible amount of software created by the co
 
   2. Get your code to the app store 
 
-  All of our sample apps are currently in the App store. Developers learning iOS can get their code in the app store   without having to write an entire App. They only need to send a pull request.
+  All of our sample apps are currently in the App store. Developers learning iOS can get their code in the app store   without having to write an entire app. They only need to send a pull request.
 
   3. Support other iOS Framework companies
   
