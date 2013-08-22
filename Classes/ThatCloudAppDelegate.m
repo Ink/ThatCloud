@@ -100,6 +100,7 @@
 - (void)storeBlob:(INKBlob *)blob withStartingSource:(NSString *)startingSource {
     
     NSLog(@"Store received: %@", blob);
+    
     NSString *mimeType = ( NSString *)CFBridgingRelease(UTTypeCopyPreferredTagWithClass(( CFStringRef)CFBridgingRetain((blob .uti)), kUTTagClassMIMEType));
     
     //remove any existing views
@@ -132,6 +133,9 @@
 //This method is used instead of the handleOpenURL method because it is depreciated in iOS 6 and only one of the methods can be used
 -(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
     if ([Ink openURL:url sourceApplication:sourceApplication annotation:annotation]) {
+        
+        // Don't run the welcome flow if coming in on an action
+        [INKWelcomeViewController setShouldRunWelcomeFlow:NO];
         return YES;
     }
     
