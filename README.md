@@ -1,4 +1,4 @@
-ThatCloud
+ThatCloud [![App Store](http://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.png)](https://itunes.apple.com/app/id681023311)
 =========
 
 ThatCloud is an iOS app that integrates all your cloud storage services so you get work done. No more saving work until you get back to your desk - with ThatCloud, you can get it done on the go.
@@ -14,7 +14,7 @@ A few ThatCloud features:
 
 With ThatCloud, the iPad is a full-blown productivity device - you no longer need to worry about not having a filesystem on your iPad. The full list of features is detailed in our [blog post](http://blog.inkmobility.com/post/58830177894/introducing-thatcloud-your-portal-to-your-cloud).
 
-ThatCloud is also currently available on the [App Store](https://itunes.apple.com/us/app/thatcloud/id681023311?mt=8)
+ThatCloud is also currently available on the [App Store](https://itunes.apple.com/app/id681023311)
 ![ThatCloud in action](https://s3.amazonaws.com/your_own_bucket/Cq4qJEoAQmWLSZXbKedw_awesome)
 
 License
