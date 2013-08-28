@@ -36,7 +36,7 @@ If you're looking for something to work on, take a look in the list of issues fo
 What are the "That" Apps?
 -------------------------
 
-To demonstrate the power Ink mobile framework, Ink created the "ThatApp" suite of sample apps. Along with ThatCloud, there is also ThatInbox for reading your mail, ThatPhoto for editing your photos and ThatPDF for signing and annotating documents. But we want the apps to do more than just showcase the Ink Mobile Framework. That's why we're releasing the apps open source. 
+To demonstrate the power of the Ink mobile framework, Ink created the "ThatApp" suite of sample apps. Along with ThatCloud, there is also ThatInbox for reading your mail, ThatPhoto for editing your photos and ThatPDF for signing and annotating documents. But we want the apps to do more than just showcase the Ink Mobile Framework. That's why we're releasing the apps open source. 
 
 As iOS developers, we leverage an incredible amount of software created by the community. By releasing these apps, we hope we can make small contribution back. Here's what you can do with these apps:
   1. Use them!
