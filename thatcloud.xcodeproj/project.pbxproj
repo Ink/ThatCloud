@@ -1525,7 +1525,10 @@
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				INFOPLIST_FILE = "Classes/thatcloud-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
 				PRODUCT_NAME = thatcloud;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -1573,7 +1576,10 @@
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				INFOPLIST_FILE = "Classes/thatcloud-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
 				PRODUCT_NAME = thatcloud;
 				PROVISIONING_PROFILE = "28CCD7EB-80EC-4C9C-AC63-7B3409AFCB53";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "28CCD7EB-80EC-4C9C-AC63-7B3409AFCB53";
