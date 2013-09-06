@@ -153,6 +153,7 @@
 		99DDE378168B7B780071241C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DDE350168B7B780071241C /* Foundation.framework */; };
 		99DDE3B2168B83D70071241C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DDE3B1168B83D70071241C /* AssetsLibrary.framework */; };
 		99DDE3B5168B8E340071241C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DDE3B4168B8E340071241C /* MBProgressHUD.m */; };
+		EA24660217D803CA009A4619 /* StandaloneStatsEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = EA24660117D803CA009A4619 /* StandaloneStatsEmitter.m */; };
 		EA4DE4B317C585EE001D7859 /* FPAFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DE49F17C585EE001D7859 /* FPAFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EA4DE4B417C585EE001D7859 /* FPAFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DE4A117C585EE001D7859 /* FPAFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EA4DE4B517C585EE001D7859 /* FPAFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DE4A317C585EE001D7859 /* FPAFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -448,6 +449,8 @@
 		99DDE3B1168B83D70071241C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		99DDE3B3168B8E340071241C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		99DDE3B4168B8E340071241C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		EA24660017D803C9009A4619 /* StandaloneStatsEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandaloneStatsEmitter.h; sourceTree = "<group>"; };
+		EA24660117D803CA009A4619 /* StandaloneStatsEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandaloneStatsEmitter.m; sourceTree = "<group>"; };
 		EA4DE49E17C585EE001D7859 /* FPAFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPAFHTTPClient.h; sourceTree = "<group>"; };
 		EA4DE49F17C585EE001D7859 /* FPAFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPAFHTTPClient.m; sourceTree = "<group>"; };
 		EA4DE4A017C585EE001D7859 /* FPAFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPAFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -934,6 +937,8 @@
 		99DDE354168B7B780071241C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EA24660017D803C9009A4619 /* StandaloneStatsEmitter.h */,
+				EA24660117D803CA009A4619 /* StandaloneStatsEmitter.m */,
 				99DDE35D168B7B780071241C /* ThatCloudAppDelegate.h */,
 				99DDE35E168B7B780071241C /* ThatCloudAppDelegate.m */,
 				99DDE369168B7B780071241C /* MainStoryboard_iPad.storyboard */,
@@ -1374,6 +1379,7 @@
 				EA4DE4BA17C585EE001D7859 /* FPAFURLConnectionOperation.m in Sources */,
 				EA4DE4BB17C585EE001D7859 /* FPAFXMLRequestOperation.m in Sources */,
 				EA4DE4BC17C585EE001D7859 /* UIImageView+FPAFNetworking.m in Sources */,
+				EA24660217D803CA009A4619 /* StandaloneStatsEmitter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1548,8 +1554,8 @@
 				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
 				CLANG_WARN_OBJC_RECEIVER_WEAK = NO;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Cloudtop, Inc. (2JM4L43UFF)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Cloudtop, Inc. (2JM4L43UFF)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COMPRESS_PNG_FILES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1581,8 +1587,8 @@
 					"-lz",
 				);
 				PRODUCT_NAME = thatcloud;
-				PROVISIONING_PROFILE = "28CCD7EB-80EC-4C9C-AC63-7B3409AFCB53";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "28CCD7EB-80EC-4C9C-AC63-7B3409AFCB53";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
