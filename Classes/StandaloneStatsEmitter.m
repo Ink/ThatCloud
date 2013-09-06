@@ -3,12 +3,10 @@
 //  INK
 //
 //  Created by Russell Cohen on 9/4/13.
-//  Copyright (c) 2013 Computer Club. All rights reserved.
+//  Copyright (c) 2013 Ink (Cloudtop Inc.) All rights reserved.
 //
 
 #import "StandaloneStatsEmitter.h"
-//#import "InternalConstants.h"
-//#import "InternalWorkflowConstants.h"
 
 #define ink_STATSURL @"https://www.example.com/"
 #define WARNING(...) NSLog(__VA_ARGS__); assert(false);
