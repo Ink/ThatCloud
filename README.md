@@ -41,11 +41,11 @@ To demonstrate the power of the Ink mobile framework, Ink created the "ThatApp" 
 As iOS developers, we leverage an incredible amount of software created by the community. By releasing these apps, we hope we can make small contribution back. Here's what you can do with these apps:
   1. Use them!
     
-  They are your aps, and you should be able to do with them what you want. Skin it, fix it, tweak it, improve it. Once you're done, send us a pull request. We build and submit to the app store every other week on Thursdays.
+  They are your apps, and you should be able to do with them what you want. Skin it, fix it, tweak it, improve it. Once you're done, send us a pull request. We build and submit to the app store every other week on Thursdays.
   
-  2. Get your code to the app store 
+  2. Get your code to the App Store 
 
-  All of our sample apps are currently in the App store. If you're just learning iOS, you can get real, production code in the app store without having to write an entire app. Just send us a pull request!
+  All of our sample apps are currently in the App Store. If you're just learning iOS, you can get real, production code in the app store without having to write an entire app. Just send us a pull request!
 
   3. Support other iOS Framework companies
   
@@ -53,7 +53,7 @@ As iOS developers, we leverage an incredible amount of software created by the c
 
   4. Evaluate potential hires
   
-  Want to interview an iOS developer? Test their chops by asking them to add a feature or two a real-world app.
+  Want to interview an iOS developer? Test their chops by asking them to add a feature or two to a real-world app.
 
   5. Show off your skills
   
