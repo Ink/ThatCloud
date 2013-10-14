@@ -38,7 +38,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.previewViewController = (FilePreviewViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    //self.previewViewController = (FilePreviewViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    if (DEVICE_IS_IPAD) {
+        self.previewViewController = (FilePreviewViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    } else {
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+        self.previewViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"FilePreviewViewController_iPhone"];
+    }
     self.previewViewController.master = (id)self;
     [UIBarButtonItem configureFlatButtonsWithColor:[UIColor peterRiverColor]
                                   highlightedColor:[UIColor belizeHoleColor]

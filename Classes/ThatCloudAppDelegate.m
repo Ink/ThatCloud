@@ -50,7 +50,7 @@
     
     if ([INKWelcomeViewController shouldRunWelcomeFlow]) {
         INKWelcomeViewController * welcomeViewController;
-        welcomeViewController = [[INKWelcomeViewController alloc] initWithNibName:@"INKWelcomeViewController" bundle:nil];
+        welcomeViewController = [[INKWelcomeViewController alloc] initWithNibName:DEVICE_SPECIFIC_NIB2( INKWelcomeViewController) bundle:nil];
         
         welcomeViewController.nextViewController = self.window.rootViewController;
         [self.window setRootViewController:welcomeViewController];

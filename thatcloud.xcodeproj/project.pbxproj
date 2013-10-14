@@ -153,6 +153,22 @@
 		99DDE378168B7B780071241C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DDE350168B7B780071241C /* Foundation.framework */; };
 		99DDE3B2168B83D70071241C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DDE3B1168B83D70071241C /* AssetsLibrary.framework */; };
 		99DDE3B5168B8E340071241C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DDE3B4168B8E340071241C /* MBProgressHUD.m */; };
+		9AB803E81809DDDA008FCFB9 /* INKWelcomeViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB803E71809DDDA008FCFB9 /* INKWelcomeViewController_iPhone.xib */; };
+		9AB803F51809DDF0008FCFB9 /* WelcomeThatPhoto_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB803E91809DDF0008FCFB9 /* WelcomeThatPhoto_iPhone.png */; };
+		9AB803F61809DDF0008FCFB9 /* WelcomeThatPhoto_iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB803EA1809DDF0008FCFB9 /* WelcomeThatPhoto_iPhone@2x.png */; };
+		9AB803F71809DDF0008FCFB9 /* WelcomeThatPDF_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB803EB1809DDF0008FCFB9 /* WelcomeThatPDF_iPhone.png */; };
+		9AB803F81809DDF0008FCFB9 /* WelcomeThatPDF_iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB803EC1809DDF0008FCFB9 /* WelcomeThatPDF_iPhone@2x.png */; };
+		9AB803F91809DDF0008FCFB9 /* WelcomeThatCloud_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB803ED1809DDF0008FCFB9 /* WelcomeThatCloud_iPhone.png */; };
+		9AB803FA1809DDF0008FCFB9 /* WelcomeThatCloud_iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB803EE1809DDF0008FCFB9 /* WelcomeThatCloud_iPhone@2x.png */; };
+		9AB803FB1809DDF0008FCFB9 /* WelcomeThatInbox_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB803EF1809DDF0008FCFB9 /* WelcomeThatInbox_iPhone.png */; };
+		9AB803FC1809DDF0008FCFB9 /* WelcomeThatInbox_iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB803F01809DDF0008FCFB9 /* WelcomeThatInbox_iPhone@2x.png */; };
+		9AB803FD1809DDF0008FCFB9 /* OnboardStep2_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB803F11809DDF0008FCFB9 /* OnboardStep2_iPhone.png */; };
+		9AB803FE1809DDF0008FCFB9 /* OnboardStep2_iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB803F21809DDF0008FCFB9 /* OnboardStep2_iPhone@2x.png */; };
+		9AB803FF1809DDF0008FCFB9 /* OnboardStep3_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB803F31809DDF0008FCFB9 /* OnboardStep3_iPhone.png */; };
+		9AB804001809DDF0008FCFB9 /* OnboardStep3_iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB803F41809DDF0008FCFB9 /* OnboardStep3_iPhone@2x.png */; };
+		9AB8044B1809EB9E008FCFB9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB8044A1809EB9E008FCFB9 /* MainStoryboard_iPhone.storyboard */; };
+		9AB8044E1809ED27008FCFB9 /* Default-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB8044C1809ED27008FCFB9 /* Default-568h.png */; };
+		9AB8044F1809ED27008FCFB9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB8044D1809ED27008FCFB9 /* Default-568h@2x.png */; };
 		EA24660217D803CA009A4619 /* StandaloneStatsEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = EA24660117D803CA009A4619 /* StandaloneStatsEmitter.m */; };
 		EA4DE4B317C585EE001D7859 /* FPAFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DE49F17C585EE001D7859 /* FPAFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EA4DE4B417C585EE001D7859 /* FPAFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4DE4A117C585EE001D7859 /* FPAFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -449,6 +465,22 @@
 		99DDE3B1168B83D70071241C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		99DDE3B3168B8E340071241C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		99DDE3B4168B8E340071241C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9AB803E71809DDDA008FCFB9 /* INKWelcomeViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = INKWelcomeViewController_iPhone.xib; sourceTree = "<group>"; };
+		9AB803E91809DDF0008FCFB9 /* WelcomeThatPhoto_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeThatPhoto_iPhone.png; sourceTree = "<group>"; };
+		9AB803EA1809DDF0008FCFB9 /* WelcomeThatPhoto_iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WelcomeThatPhoto_iPhone@2x.png"; sourceTree = "<group>"; };
+		9AB803EB1809DDF0008FCFB9 /* WelcomeThatPDF_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeThatPDF_iPhone.png; sourceTree = "<group>"; };
+		9AB803EC1809DDF0008FCFB9 /* WelcomeThatPDF_iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WelcomeThatPDF_iPhone@2x.png"; sourceTree = "<group>"; };
+		9AB803ED1809DDF0008FCFB9 /* WelcomeThatCloud_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeThatCloud_iPhone.png; sourceTree = "<group>"; };
+		9AB803EE1809DDF0008FCFB9 /* WelcomeThatCloud_iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WelcomeThatCloud_iPhone@2x.png"; sourceTree = "<group>"; };
+		9AB803EF1809DDF0008FCFB9 /* WelcomeThatInbox_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WelcomeThatInbox_iPhone.png; sourceTree = "<group>"; };
+		9AB803F01809DDF0008FCFB9 /* WelcomeThatInbox_iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WelcomeThatInbox_iPhone@2x.png"; sourceTree = "<group>"; };
+		9AB803F11809DDF0008FCFB9 /* OnboardStep2_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OnboardStep2_iPhone.png; sourceTree = "<group>"; };
+		9AB803F21809DDF0008FCFB9 /* OnboardStep2_iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OnboardStep2_iPhone@2x.png"; sourceTree = "<group>"; };
+		9AB803F31809DDF0008FCFB9 /* OnboardStep3_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OnboardStep3_iPhone.png; sourceTree = "<group>"; };
+		9AB803F41809DDF0008FCFB9 /* OnboardStep3_iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OnboardStep3_iPhone@2x.png"; sourceTree = "<group>"; };
+		9AB8044A1809EB9E008FCFB9 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		9AB8044C1809ED27008FCFB9 /* Default-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h.png"; sourceTree = "<group>"; };
+		9AB8044D1809ED27008FCFB9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EA24660017D803C9009A4619 /* StandaloneStatsEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandaloneStatsEmitter.h; sourceTree = "<group>"; };
 		EA24660117D803CA009A4619 /* StandaloneStatsEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandaloneStatsEmitter.m; sourceTree = "<group>"; };
 		EA4DE49E17C585EE001D7859 /* FPAFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPAFHTTPClient.h; sourceTree = "<group>"; };
@@ -628,6 +660,7 @@
 				027AB1FF17B9D8D5007171B1 /* INKWelcomeViewController.h */,
 				027AB20017B9D8D5007171B1 /* INKWelcomeViewController.m */,
 				027AB20117B9D8D5007171B1 /* INKWelcomeViewController.xib */,
+				9AB803E71809DDDA008FCFB9 /* INKWelcomeViewController_iPhone.xib */,
 				027AB20217B9D8D5007171B1 /* PagedScrollView.h */,
 				027AB20317B9D8D5007171B1 /* PagedScrollView.m */,
 				027AB20417B9D8D5007171B1 /* Resources */,
@@ -638,6 +671,18 @@
 		027AB20417B9D8D5007171B1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9AB803E91809DDF0008FCFB9 /* WelcomeThatPhoto_iPhone.png */,
+				9AB803EA1809DDF0008FCFB9 /* WelcomeThatPhoto_iPhone@2x.png */,
+				9AB803EB1809DDF0008FCFB9 /* WelcomeThatPDF_iPhone.png */,
+				9AB803EC1809DDF0008FCFB9 /* WelcomeThatPDF_iPhone@2x.png */,
+				9AB803ED1809DDF0008FCFB9 /* WelcomeThatCloud_iPhone.png */,
+				9AB803EE1809DDF0008FCFB9 /* WelcomeThatCloud_iPhone@2x.png */,
+				9AB803EF1809DDF0008FCFB9 /* WelcomeThatInbox_iPhone.png */,
+				9AB803F01809DDF0008FCFB9 /* WelcomeThatInbox_iPhone@2x.png */,
+				9AB803F11809DDF0008FCFB9 /* OnboardStep2_iPhone.png */,
+				9AB803F21809DDF0008FCFB9 /* OnboardStep2_iPhone@2x.png */,
+				9AB803F31809DDF0008FCFB9 /* OnboardStep3_iPhone.png */,
+				9AB803F41809DDF0008FCFB9 /* OnboardStep3_iPhone@2x.png */,
 				027AB20517B9D8D5007171B1 /* OnboardStep2.png */,
 				027AB20617B9D8D5007171B1 /* OnboardStep2@2x.png */,
 				027AB20717B9D8D5007171B1 /* OnboardStep3.png */,
@@ -785,6 +830,8 @@
 		9934FCC7170F7FEE00890A53 /* IconsAndBackgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				9AB8044C1809ED27008FCFB9 /* Default-568h.png */,
+				9AB8044D1809ED27008FCFB9 /* Default-568h@2x.png */,
 				8374922717A7847C0084FEAC /* Icon-72@2x.png */,
 				8374922517A784760084FEAC /* Icon-72.png */,
 				8310823617A50172008713FC /* Default-Portrait~ipad.png */,
@@ -942,6 +989,7 @@
 				99DDE35D168B7B780071241C /* ThatCloudAppDelegate.h */,
 				99DDE35E168B7B780071241C /* ThatCloudAppDelegate.m */,
 				99DDE369168B7B780071241C /* MainStoryboard_iPad.storyboard */,
+				9AB8044A1809EB9E008FCFB9 /* MainStoryboard_iPhone.storyboard */,
 				83FB0825178F639100754626 /* FilePreviewViewController.h */,
 				EA8B739017A0817C003EF80D /* SourceListSaveController.h */,
 				EA8B739117A0817C003EF80D /* SourceListSaveController.m */,
@@ -1163,11 +1211,13 @@
 				99A9FA5E174479DF00205C32 /* package@2x.png in Resources */,
 				99A9FA5F174479DF00205C32 /* page_white.png in Resources */,
 				99A9FA60174479DF00205C32 /* page_white@2x.png in Resources */,
+				9AB803E81809DDDA008FCFB9 /* INKWelcomeViewController_iPhone.xib in Resources */,
 				99A9FA62174479DF00205C32 /* page_white_acrobat@2x.png in Resources */,
 				99A9FA64174479DF00205C32 /* page_white_acrobat_import@2x.png in Resources */,
 				99A9FA65174479DF00205C32 /* page_white_actionscript.png in Resources */,
 				99A9FA66174479DF00205C32 /* page_white_actionscript@2x.png in Resources */,
 				99A9FA67174479DF00205C32 /* page_white_c.png in Resources */,
+				9AB804001809DDF0008FCFB9 /* OnboardStep3_iPhone@2x.png in Resources */,
 				99A9FA68174479DF00205C32 /* page_white_c@2x.png in Resources */,
 				99A9FA69174479DF00205C32 /* page_white_code.png in Resources */,
 				99A9FA6A174479DF00205C32 /* page_white_code@2x.png in Resources */,
@@ -1185,6 +1235,7 @@
 				99A9FA78174479DF00205C32 /* page_white_excel@2x.png in Resources */,
 				99A9FA7B174479DF00205C32 /* page_white_film.png in Resources */,
 				99A9FA7C174479DF00205C32 /* page_white_film@2x.png in Resources */,
+				9AB803F81809DDF0008FCFB9 /* WelcomeThatPDF_iPhone@2x.png in Resources */,
 				99A9FA7D174479DF00205C32 /* page_white_flash.png in Resources */,
 				99A9FA7E174479DF00205C32 /* page_white_flash@2x.png in Resources */,
 				99A9FA7F174479DF00205C32 /* page_white_gear.png in Resources */,
@@ -1197,11 +1248,14 @@
 				99A9FA86174479DF00205C32 /* page_white_jef@2x.png in Resources */,
 				99A9FA87174479DF00205C32 /* page_white_js.png in Resources */,
 				99A9FA88174479DF00205C32 /* page_white_js@2x.png in Resources */,
+				9AB8044E1809ED27008FCFB9 /* Default-568h.png in Resources */,
+				9AB8044B1809EB9E008FCFB9 /* MainStoryboard_iPhone.storyboard in Resources */,
 				99A9FA89174479DF00205C32 /* page_white_paint.png in Resources */,
 				99A9FA8A174479DF00205C32 /* page_white_paint@2x.png in Resources */,
 				99A9FA8D174479DF00205C32 /* page_white_php.png in Resources */,
 				99A9FA8E174479DF00205C32 /* page_white_php@2x.png in Resources */,
 				99A9FA8F174479DF00205C32 /* page_white_picture.png in Resources */,
+				9AB803F51809DDF0008FCFB9 /* WelcomeThatPhoto_iPhone.png in Resources */,
 				99A9FA90174479DF00205C32 /* page_white_picture@2x.png in Resources */,
 				99A9FA93174479DF00205C32 /* page_white_powerpoint.png in Resources */,
 				99A9FA94174479DF00205C32 /* page_white_powerpoint@2x.png in Resources */,
@@ -1219,9 +1273,11 @@
 				99A9FAA6174479DF00205C32 /* page_white_visualstudio@2x.png in Resources */,
 				99A9FAA7174479DF00205C32 /* page_white_word.png in Resources */,
 				99A9FAA8174479DF00205C32 /* page_white_word@2x.png in Resources */,
+				9AB803FE1809DDF0008FCFB9 /* OnboardStep2_iPhone@2x.png in Resources */,
 				99A9FAAB174479DF00205C32 /* pages.png in Resources */,
 				99A9FAAC174479DF00205C32 /* pages@2x.png in Resources */,
 				EA8B73CD17A0817C003EF80D /* allowedUrlPrefix.plist in Resources */,
+				9AB803FA1809DDF0008FCFB9 /* WelcomeThatCloud_iPhone@2x.png in Resources */,
 				EA8B73CF17A0817C003EF80D /* disallowedUrlPrefix.plist in Resources */,
 				EA8B73D017A0817C003EF80D /* FilepickerSettings.plist in Resources */,
 				EA8B73EA17A0817C003EF80D /* glyphicons_008_film.png in Resources */,
@@ -1249,6 +1305,7 @@
 				EA8B740017A0817C003EF80D /* glyphicons_390_facebook.png in Resources */,
 				EA8B740117A0817C003EF80D /* glyphicons_390_facebook@2x.png in Resources */,
 				EA8B740217A0817C003EF80D /* glyphicons_395_flickr.png in Resources */,
+				9AB803F91809DDF0008FCFB9 /* WelcomeThatCloud_iPhone.png in Resources */,
 				EA8B740317A0817C003EF80D /* glyphicons_395_flickr@2x.png in Resources */,
 				EA8B740417A0817C003EF80D /* glyphicons_399_e-mail.png in Resources */,
 				EA8B740517A0817C003EF80D /* glyphicons_399_e-mail@2x.png in Resources */,
@@ -1260,12 +1317,16 @@
 				EA8B740B17A0817C003EF80D /* glyphicons_sb3_skydrive@2x.png in Resources */,
 				EA8B740C17A0817C003EF80D /* GoogleDrive.png in Resources */,
 				EA8B740D17A0817C003EF80D /* GoogleDrive@2x.png in Resources */,
+				9AB803FD1809DDF0008FCFB9 /* OnboardStep2_iPhone.png in Resources */,
+				9AB803F71809DDF0008FCFB9 /* WelcomeThatPDF_iPhone.png in Resources */,
 				EA8B740E17A0817C003EF80D /* Instagram.png in Resources */,
+				9AB803FF1809DDF0008FCFB9 /* OnboardStep3_iPhone.png in Resources */,
 				EA8B740F17A0817C003EF80D /* Instagram@2x.png in Resources */,
 				EA8B741C17A339FC003EF80D /* page_white_acrobat_import.png in Resources */,
 				EA8B741E17A339FC003EF80D /* page_white_acrobat.png in Resources */,
 				8310823117A500D9008713FC /* Default-Landscape~ipad.png in Resources */,
 				8310823317A500DD008713FC /* Default-Landscape@2x~ipad.png in Resources */,
+				9AB803F61809DDF0008FCFB9 /* WelcomeThatPhoto_iPhone@2x.png in Resources */,
 				8310823517A5016D008713FC /* Default-Portrait@2x~ipad.png in Resources */,
 				8310823717A50172008713FC /* Default-Portrait~ipad.png in Resources */,
 				8310823F17A50532008713FC /* folder.png in Resources */,
@@ -1283,12 +1344,15 @@
 				027AB21217B9D8D5007171B1 /* INKWelcomeViewController.xib in Resources */,
 				027AB21417B9D8D5007171B1 /* OnboardStep2.png in Resources */,
 				027AB21517B9D8D5007171B1 /* OnboardStep2@2x.png in Resources */,
+				9AB803FC1809DDF0008FCFB9 /* WelcomeThatInbox_iPhone@2x.png in Resources */,
 				027AB21617B9D8D5007171B1 /* OnboardStep3.png in Resources */,
+				9AB803FB1809DDF0008FCFB9 /* WelcomeThatInbox_iPhone.png in Resources */,
 				027AB21717B9D8D5007171B1 /* OnboardStep3@2x.png in Resources */,
 				027AB21817B9D8D5007171B1 /* WelcomeThatCloud.png in Resources */,
 				027AB21917B9D8D5007171B1 /* WelcomeThatCloud@2x.png in Resources */,
 				027AB21A17B9D8D5007171B1 /* WelcomeThatInbox.png in Resources */,
 				027AB21B17B9D8D5007171B1 /* WelcomeThatInbox@2x.png in Resources */,
+				9AB8044F1809ED27008FCFB9 /* Default-568h@2x.png in Resources */,
 				027AB21C17B9D8D5007171B1 /* WelcomeThatPDF.png in Resources */,
 				027AB21D17B9D8D5007171B1 /* WelcomeThatPDF@2x.png in Resources */,
 				027AB21E17B9D8D5007171B1 /* WelcomeThatPhoto.png in Resources */,
@@ -1537,7 +1601,7 @@
 				);
 				PRODUCT_NAME = thatcloud;
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1554,8 +1618,8 @@
 				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
 				CLANG_WARN_OBJC_RECEIVER_WEAK = NO;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1589,7 +1653,7 @@
 				PRODUCT_NAME = thatcloud;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

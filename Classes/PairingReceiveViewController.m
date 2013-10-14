@@ -33,6 +33,10 @@
     return self;
 }
 
+#define labelFrame (DEVICE_IS_IPAD ? CGRectMake(0, 30, 540, 30) : CGRectMake(0, 30, 320, 30))
+#define filenameFrame (DEVICE_IS_IPAD ? CGRectMake((540-400)/2, 130, 400, 30) : CGRectMake(0, 130, 320, 30))
+#define mimetypeFrame (DEVICE_IS_IPAD ? CGRectMake((540-400)/2, 150, 400, 30) : CGRectMake(0, 150, 320, 30))
+#define txFrame (DEVICE_IS_IPAD ? CGRectMake((540-350)/2, 80, 350, 30) : CGRectMake(0, 80, 320, 30))
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -45,14 +49,14 @@
     
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 30, 540, 30)];
+    UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
     label.text = [NSString stringWithFormat:@"Enter the Pairing Code:"];
     label.font = [UIFont fontWithName:LIGHTFONT size:16];
     
     label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:label];
     
-    UILabel *filename = [[UILabel alloc] initWithFrame:CGRectMake((540-400)/2, 130, 400, 30)];
+    UILabel *filename = [[UILabel alloc] initWithFrame:filenameFrame];
     filename.text = @"";
     filename.textAlignment = NSTextAlignmentCenter;
     filename.lineBreakMode = NSLineBreakByTruncatingMiddle;
@@ -60,7 +64,7 @@
     [self.view addSubview:filename];
     self.filename = filename;
     
-    UILabel *mimetype = [[UILabel alloc] initWithFrame:CGRectMake((540-400)/2, 150, 400, 30)];
+    UILabel *mimetype = [[UILabel alloc] initWithFrame:mimetypeFrame];
     mimetype.textAlignment = NSTextAlignmentCenter;
     mimetype.text = @"";
     mimetype.font = [UIFont fontWithName:LIGHTFONT size:14];
@@ -74,7 +78,7 @@
     label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:label];
     
-    UITextField *tx = [[UITextField alloc] initWithFrame:CGRectMake((540-350)/2, 80, 350, 30)];
+    UITextField *tx = [[UITextField alloc] initWithFrame:txFrame];
     [tx setBorderStyle:UITextBorderStyleRoundedRect];
     [tx setFont:[UIFont fontWithName:@"Courier" size:16]];
     tx.autocapitalizationType = UITextAutocapitalizationTypeNone;
