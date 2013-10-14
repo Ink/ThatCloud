@@ -59,8 +59,12 @@
     
     self.navigationItem.leftBarButtonItem =[[UIBarButtonItem alloc]initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(backButtonAction)];
     
-    self.previewViewController = (FilePreviewViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
-    
+    if (DEVICE_IS_IPAD) {
+        self.previewViewController = (FilePreviewViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    } else {
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+        self.previewViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"FilePreviewViewController_iPhone"];
+    }
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     [refreshControl addTarget:self action:@selector(handleRefresh:) forControlEvents:UIControlEventValueChanged];
     self.refreshControl = refreshControl;
@@ -607,6 +611,9 @@
                                                               , nil]];
     });
     
+    if (!DEVICE_IS_IPAD) {
+        [FPMBProgressHUD showHUDAddedTo:self.view animated:YES];
+    }
     [[self previewViewController] showSpinner];
     [self downloadAndUpdatePreview:obj];
 
@@ -645,6 +652,10 @@
         
         [selectedFile writeData:data];
         
+        if (!DEVICE_IS_IPAD) {
+            [FPMBProgressHUD hideHUDForView:self.view animated:NO];
+            [self.navigationController pushViewController:self.previewViewController animated:YES];
+        }
         [[self previewViewController] previewFile:selectedFile];
     }
     failure:^(FPAFHTTPRequestOperation *operation, NSError *error) {

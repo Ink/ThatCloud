@@ -35,6 +35,11 @@
     return self;
 }
 
+#define imageVFrame (DEVICE_IS_IPAD ? (CGRectMake((540-imageV.frame.size.width)/2, 50, imageV.frame.size.width, imageV.frame.size.height)) : (CGRectMake(10, 5, imageV.frame.size.width, imageV.frame.size.height)))
+#define subheaderFrame (DEVICE_IS_IPAD ? CGRectMake(0, 200, 540, 90) : CGRectMake(0, 170, 320, 90))
+#define labelFrame (DEVICE_IS_IPAD ? CGRectMake(0, 350, 540, 30) : CGRectMake(0, 280, 320, 30))
+#define pairingTextfieldFrame (DEVICE_IS_IPAD ? CGRectMake((540-250)/2, 385, 250, 30) : CGRectMake(40, 335, 250, 30))
+#define copylabelFrame (DEVICE_IS_IPAD ? CGRectMake(0, 410, 540, 30) : CGRectMake(0, 350, 320, 30))
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -45,10 +50,10 @@
     [self.view setBackgroundColor:[UIColor whiteColor]];
 
     UIImageView *imageV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pair.png"]];
-    imageV.frame = CGRectMake((540-imageV.frame.size.width)/2, 50, imageV.frame.size.width, imageV.frame.size.height);
+    imageV.frame = imageVFrame;
     [self.view addSubview:imageV];
     
-    UILabel *subheader = [[UILabel alloc] initWithFrame:CGRectMake(0, 200, 540, 90)];
+    UILabel *subheader = [[UILabel alloc] initWithFrame:subheaderFrame];
     subheader.textAlignment = NSTextAlignmentCenter;
     subheader.text = @"You can easily share files with other ThatCloud users.\n A secure pairing code has been generated below \nand can be retrieved on another device with ThatCloud.";
     subheader.lineBreakMode = NSLineBreakByWordWrapping;
@@ -57,14 +62,14 @@
     [self.view addSubview:subheader];
 
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 350, 540, 30)];
+    UILabel *label = [[UILabel alloc] initWithFrame:labelFrame];
     label.textAlignment = NSTextAlignmentCenter;
     label.text = @"Pairing Code";
     label.font = [UIFont fontWithName:FONT size:22];
     [self.view addSubview:label];
 
     
-    UITextField *pairing = [[UITextField alloc] initWithFrame:CGRectMake((540-250)/2, 385, 250, 30)];
+    UITextField *pairing = [[UITextField alloc] initWithFrame:pairingTextfieldFrame];
     [pairing setText:self.fphandle];
     pairing.delegate = self;
     pairing.textAlignment = NSTextAlignmentCenter;
@@ -72,7 +77,7 @@
     pairing.font = [UIFont fontWithName:@"Courier" size:18];
     [self.view addSubview:pairing];
     
-    UILabel *copylabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 410, 540, 30)];
+    UILabel *copylabel = [[UILabel alloc] initWithFrame:copylabelFrame];
     copylabel.textAlignment = NSTextAlignmentCenter;
     copylabel.text = @"(Copied to your clipboard)";
     copylabel.font = [UIFont fontWithName:FONT size:14];
