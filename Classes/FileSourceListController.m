@@ -16,6 +16,7 @@
 #import <INK/Ink.h>
 #import "FPSampleSourceController.h"
 #import "ThatCloudConstants.h"
+#import "StandaloneStatsEmitter.h"
 
 #import "FlatUIKit.h"
 
@@ -371,9 +372,8 @@
     index--;
     NSString *sourceCategory = [[self.sources allKeys] objectAtIndex:indexPath.section];
     FPSource *source = [[self.sources valueForKey:sourceCategory] objectAtIndex:index];
-
-    //NSLog(@"Source %@", source);
-
+    
+    [[StandaloneStatsEmitter sharedEmitter] sendStat:@"source_selected" withAdditionalStatistics:@{@"source": source.name}];
 
     FileSourceController *sView;
     if ([fpdelegate class] == [SourceListSaveController class]){

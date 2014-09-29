@@ -11,6 +11,7 @@
 #import "FPPicker.h"
 #import "INKWelcomeViewController.h"
 #import "ATConnect.h"
+#import "StandaloneStatsEmitter.h"
 
 #define kApptentiveAPIKey @"2f565a4292b7381c91028235e59b70dc20616c503690982e1adb25d68637d89c"
 
@@ -23,13 +24,16 @@
     
     // Initialize Ink
     [Ink setupWithAppKey:@"AneRowxpcloudAGkdngz"];
+    
+    [[StandaloneStatsEmitter sharedEmitter] setAppKey:@"AneRowxpcloudAGkdngz"];
+    [[StandaloneStatsEmitter sharedEmitter] sendStat:@"app_launched" withAdditionalStatistics:nil];
     [[INKCoreManager sharedManager] registerAdditionalURLScheme:@"thatcloud"];
     
     // Register our incoming actions
     INKAction *store = [INKAction action:@"Store in ThatCloud" type:INKActionType_Store];
     [Ink registerAction:store withTarget:self selector:@selector(storeBlob:action:error:)];
     
-    INKAction *storeFacebook = [INKAction action:@"Post in Facebook" type:INKActionType_Share];
+    INKAction *storeFacebook = [INKAction action:@"Post to Facebook" type:INKActionType_Share];
     [Ink registerAction:storeFacebook withTarget:self selector:@selector(storeToFacebook:action:error:)];
     
     INKAction *storeDropbox = [INKAction action:@"Store in Dropbox" type:INKActionType_Insert];
